@@ -35,17 +35,17 @@ export const PROFILE_FORMS = {
   WORK_EXPERIENCE: "workExperience",
 } as const; // tech_debt (99gfdt). Must match the variable with the same name in the UI project
 
-export declare enum WorkExperienceFormFields {
+export enum WorkExperienceFormFields {
   JOB_TITLE = "jobTitle",
   COMPANY = "company",
   YEARS = "years",
   CURRENTLY_THERE = "currentlyThere"
 }
-export declare enum SkillsFormFields {
+export enum SkillsFormFields {
   NAME = "name",
   YEARS = "years"
 }
-export declare enum LanguagesFormFields {
+export enum LanguagesFormFields {
   LANGUAGE = "language",
   PROFICIENCY = "proficiency"
 }
