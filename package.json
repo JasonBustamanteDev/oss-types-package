@@ -1,5 +1,5 @@
 {
-    "name": "oss_custom_npm_package",
+    "name": "oss_custom_types_package",
     "version": "1.0.0",
     "description": "",
     "main": "./dist/index.js",
