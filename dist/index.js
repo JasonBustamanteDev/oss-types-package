@@ -22,3 +22,20 @@ export const PROFILE_FORMS = {
     SKILLS: "skills",
     WORK_EXPERIENCE: "workExperience",
 }; // tech_debt (99gfdt). Must match the variable with the same name in the UI project
+export var WorkExperienceFormFields;
+(function (WorkExperienceFormFields) {
+    WorkExperienceFormFields["JOB_TITLE"] = "jobTitle";
+    WorkExperienceFormFields["COMPANY"] = "company";
+    WorkExperienceFormFields["YEARS"] = "years";
+    WorkExperienceFormFields["CURRENTLY_THERE"] = "currentlyThere";
+})(WorkExperienceFormFields || (WorkExperienceFormFields = {}));
+export var SkillsFormFields;
+(function (SkillsFormFields) {
+    SkillsFormFields["NAME"] = "name";
+    SkillsFormFields["YEARS"] = "years";
+})(SkillsFormFields || (SkillsFormFields = {}));
+export var LanguagesFormFields;
+(function (LanguagesFormFields) {
+    LanguagesFormFields["LANGUAGE"] = "language";
+    LanguagesFormFields["PROFICIENCY"] = "proficiency";
+})(LanguagesFormFields || (LanguagesFormFields = {}));

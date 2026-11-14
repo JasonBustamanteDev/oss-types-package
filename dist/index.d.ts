@@ -30,3 +30,17 @@ export declare const PROFILE_FORMS: {
     readonly SKILLS: "skills";
     readonly WORK_EXPERIENCE: "workExperience";
 };
+export declare enum WorkExperienceFormFields {
+    JOB_TITLE = "jobTitle",
+    COMPANY = "company",
+    YEARS = "years",
+    CURRENTLY_THERE = "currentlyThere"
+}
+export declare enum SkillsFormFields {
+    NAME = "name",
+    YEARS = "years"
+}
+export declare enum LanguagesFormFields {
+    LANGUAGE = "language",
+    PROFICIENCY = "proficiency"
+}
