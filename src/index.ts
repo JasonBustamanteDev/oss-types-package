@@ -1,3 +1,15 @@
+export const PROFILE_FORMS = {
+  PERSONAL_DETAILS: "personalDetails",
+  LOCATION: "location",
+  PREFERENCES: "preferences",
+  EDUCATION: "education",
+  MEDIA_LINKS: "mediaLinks",
+
+  LANGUAGES: "languages",
+  SKILLS: "skills",
+  WORK_EXPERIENCE: "workExperience",
+} as const;
+
 export enum JobPlatforms {
   INDEED = "indeed",
   LINKEDIN = "linkedin",
@@ -10,7 +22,24 @@ export enum ChannelEvents {
   STOP_SESSION = "stop session",
   SWITCH_TO_MAIN_TAB = "make iframe preview the main tab",
   SWITCH_TO_SECONDARY_TAB = "make iframe preview the secondary tab",
-} // tech_debt - must match the same name type in Nuxt project (ggbop42a)
+}
+
+export enum WorkExperienceFormFields {
+  JOB_TITLE = "jobTitle",
+  COMPANY = "company",
+  YEARS = "years",
+  CURRENTLY_THERE = "currentlyThere"
+}
+
+export enum SkillsFormFields {
+  NAME = "name",
+  YEARS = "years"
+}
+
+export enum LanguagesFormFields {
+  LANGUAGE = "language",
+  PROFICIENCY = "proficiency"
+}
 
 export type JobSearchFilters = {
   role: string;
@@ -21,31 +50,4 @@ export type JobSearchFilters = {
   experienceLevel: string;
   remote: string;
   jobType: string;
-}; // tech_debt. Must match type in worker project (99ksgab)
-
-export const PROFILE_FORMS = {
-  PERSONAL_DETAILS: "personalDetails",
-  LOCATION: "location",
-  PREFERENCES: "preferences",
-  EDUCATION: "education",
-  MEDIA_LINKS: "mediaLinks",
-
-  LANGUAGES: "languages",
-  SKILLS: "skills",
-  WORK_EXPERIENCE: "workExperience",
-} as const; // tech_debt (99gfdt). Must match the variable with the same name in the UI project
-
-export enum WorkExperienceFormFields {
-  JOB_TITLE = "jobTitle",
-  COMPANY = "company",
-  YEARS = "years",
-  CURRENTLY_THERE = "currentlyThere"
-}
-export enum SkillsFormFields {
-  NAME = "name",
-  YEARS = "years"
-}
-export enum LanguagesFormFields {
-  LANGUAGE = "language",
-  PROFICIENCY = "proficiency"
-}
+};

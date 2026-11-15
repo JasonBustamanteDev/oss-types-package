@@ -1,0 +1,13 @@
+HOW TO MAKE CHANGES TO THE PACKAGE
+- Edit src/index.ts. For simplicity, make it so this package's content stays in 1 file
+- Run 'npm run build', which compiles the TS into JS within the dist folder (we choose to not ignore dist directory in .gitignore on purpose, or else we'd need to compile the package before using it in our other projects)
+- Commit and push the changes up to the github repo
+- Run 'npm install github:JasonBustamanteDev/oss-types-package' on all your projects that use this package
+  This installs our custom package, which is open to the public.
+  
+UNDERSTAND THIS REPO IS PUBLIC
+If we made this repo private, it would slightly complicate the install step when we deploy the project to a new environment for prod
+It's not too difficult, but I'm choosing to keep simple types and variables in here (if exposed it won't hurt anyone)
+
+DO NOT STORE API KEYS, SECRETS, OR PROPRIETARY CODE IN HERE
+If you must do the above, make the repo private first
